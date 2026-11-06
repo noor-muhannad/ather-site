@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATHER | أثَر — سلسلة الحيازة</title>
+<meta name="description" content="ATHER (أثَر) — نموذج تخيلي لمنصة تحليل جنائي للأدلة الرقمية: صور، صوت، فيديو.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="القائمة الرئيسية">
+    <div class="logo"><img src="logo.png" alt="شعار نور"></div>
+    <div class="brand">ATHER <span>| أثَر</span><small>منصة التحليل الجنائي للأدلة الرقمية</small></div>
+    <div class="nav">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>لوحة التحكم</a>
+      <a href="intake.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg>استلام دليل</a>
+      <a href="analysis.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>التحليل</a>
+      <a href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>التقارير</a>
+      <a href="custody.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="7" height="6" rx="3"/><rect x="14" y="9" width="7" height="6" rx="3"/><path d="M10 12h4"/></svg>سلسلة الحيازة</a>
+    </div>
+    <div class="status">
+      <span class="on">يعمل محليًا — بدون إنترنت</span>
+      <div>الخادم: مختبر الأدلة الجنائية</div>
+      <div>الإصدار 1.0 · النماذج موقّعة</div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="top">
+      <div>
+        <h1>سلسلة الحيازة وسجل التدقيق</h1>
+        <p>كل سطر يحمل بصمة السطر اللي قبله. أي تعديل أو حذف بالماضي يكسر السلسلة وينكشف فورًا.</p>
+      </div>
+      <span class="demo">نموذج تخيلي · بيانات توضيحية</span>
+    </header>
+
+    <section class="banner" id="banner" aria-live="polite">
+      <div class="i">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path id="bIcon" d="M9 12l2 2 4-4"/></svg>
+        <div><strong id="bTitle">السلسلة سليمة</strong><span id="bText">48,229 سطرًا · آخر فحص 10:00 ص</span></div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <button type="button" class="btn" id="btnVerify">فحص السلسلة كاملة</button>
+        <button type="button" class="btn danger" id="btnTamper">جرّبي: عدّلي سطرًا بالقاعدة</button>
+      </div>
+    </section>
+
+    <div class="row">
+      <section class="card grow" aria-label="سجل الدليل">
+        <h2>سجل الدليل EV-2026-0418-03</h2>
+        <div class="scroll">
+          <table style="min-width:600px;font-size:12.5px">
+            <thead><tr><th>#</th><th>الوقت</th><th>المستخدم</th><th>العملية</th><th>بصمة السابق</th><th>بصمة السطر</th></tr></thead>
+            <tbody id="log"></tbody>
+          </table>
+        </div>
+      </section>
+      <aside class="side-col">
+        <section class="card" aria-label="دورة حياة الدليل">
+          <h2>دورة حياة الدليل</h2>
+          <ol class="life">
+            <li><b>✓</b>مُستلم</li><li><b>✓</b>مُتحقق من سلامته</li><li><b>✓</b>قيد التحليل</li><li><b>✓</b>رأي الخبيرة</li>
+            <li class="now"><b>5</b>المراجعة الثنائية</li><li class="todo"><b>6</b>مُعتمد ومختوم</li>
+          </ol>
+        </section>
+        <section class="card" aria-label="حزمة القضية">
+          <h2>حزمة القضية</h2>
+          <p style="margin:0 0 12px;font-size:13px;color:#4A4450;line-height:1.8">الأصل + التقرير المختوم + مقتطف السجل + ملف البصمات، مع أداة تحقق مستقلة تشتغل على أي حاسبة.</p>
+          <button type="button" class="btn ghost" id="btnExport">تصدير ZIP + manifest</button>
+          <p class="crumb" id="exportNote" style="margin:10px 0 0;font-size:12px">نقطة التثبيت اليومية (anchor): 6 تشرين الثاني · 12:00 ص</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="site">ATHER | أثَر — نموذج تخيلي للنظام بعد اكتماله · كل البيانات توضيحية · © 2026 نور مهند احمد سعيد</footer>
+  </main>
+</div>
+<script src="custody.js"></script>
+</body>
+</html>

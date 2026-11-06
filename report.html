@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATHER | أثَر — التقرير الجنائي</title>
+<meta name="description" content="ATHER (أثَر) — نموذج تخيلي لمنصة تحليل جنائي للأدلة الرقمية: صور، صوت، فيديو.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="القائمة الرئيسية">
+    <div class="logo"><img src="logo.png" alt="شعار نور"></div>
+    <div class="brand">ATHER <span>| أثَر</span><small>منصة التحليل الجنائي للأدلة الرقمية</small></div>
+    <div class="nav">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>لوحة التحكم</a>
+      <a href="intake.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg>استلام دليل</a>
+      <a href="analysis.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>التحليل</a>
+      <a href="report.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>التقارير</a>
+      <a href="custody.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="7" height="6" rx="3"/><rect x="14" y="9" width="7" height="6" rx="3"/><path d="M10 12h4"/></svg>سلسلة الحيازة</a>
+    </div>
+    <div class="status">
+      <span class="on">يعمل محليًا — بدون إنترنت</span>
+      <div>الخادم: مختبر الأدلة الجنائية</div>
+      <div>الإصدار 1.0 · النماذج موقّعة</div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="top">
+      <div>
+        <div class="crumb"><a href="index.html">القضايا</a> / ATH-2026-0418 / التقرير</div>
+        <h1>التقرير الجنائي</h1>
+      </div>
+      <span class="demo">نموذج تخيلي · بيانات توضيحية</span>
+    </header>
+
+    <section class="card" aria-label="مراحل الاعتماد" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+      <ol class="pills">
+        <li class="done">1 · التحليل اكتمل</li>
+        <li class="done">2 · رأي الخبيرة كُتب</li>
+        <li class="now" id="stReview">3 · المراجعة الثنائية</li>
+        <li id="stSeal">4 · الختم والتوقيع</li>
+      </ol>
+      <div style="display:flex;flex-wrap:wrap;gap:10px" id="actions">
+        <button type="button" class="btn ghost" id="btnReturn">إعادة للتحليل</button>
+        <button type="button" class="btn" id="btnSeal">اعتماد وختم (المراجع)</button>
+      </div>
+      <span class="chip green hidden" id="sealedChip" style="font-size:14px;padding:10px 16px">✓ مختوم — لا يُعدَّل بعد الآن</span>
+    </section>
+    <p class="note hidden" id="returnedNote" style="margin:0">انعاد للتحليل مع سبب مكتوب. التقرير الحالي محفوظ كإصدار 1 وراح ينكتب إصدار 2.</p>
+
+    <article class="paper" aria-label="معاينة التقرير">
+      <div class="head">
+        <div><div class="t">تقرير فحص دليل رقمي</div><div class="crumb">القضية ATH-2026-0418 · الدليل EV-2026-0418-03 · الإصدار 1</div></div>
+        <img src="logo.png" alt="شعار نور" style="height:44px;width:auto">
+      </div>
+      <section><h3>1 · السؤال الفني</h3><p style="margin:0">هل تحتوي الصورة على آثار تلاعب أو توليد اصطناعي، وهل تتسق مع ادعاء التصوير بالهاتف؟</p></section>
+      <section><h3>2 · بيانات الدليل وبيان السلامة</h3>
+        <table><tbody>
+          <tr><td class="k">الملف</td><td>IMG-20261103-WA0007.jpg · JPEG · 214 KB</td></tr>
+          <tr><td class="k">SHA-256</td><td class="mono ltr" style="font-size:11px">9f2c41d8a07b3e5c6f19d2a4b8e0c7713a5d6e9f0b2c4d8e1a3f5b7c9d0e2f41</td></tr>
+          <tr><td class="k">الاستلام</td><td>6 تشرين الثاني 2026 · 10:42 ص · نسخ من هاتف المُبلِّغ</td></tr>
+          <tr><td class="k">السلامة</td><td>البصمة مطابقة منذ الاستلام (3 تحققات). <strong>هذا يثبت سلامة النسخة ولا يثبت صحة المشهد.</strong></td></tr>
+        </tbody></table></section>
+      <section><h3>3 · الفحوص المُجراة</h3>
+        <div class="scroll"><table>
+          <thead><tr><th>الأداة</th><th>الإصدار</th><th>النتيجة</th><th>الموثوقية هنا</th><th>معدل الخطأ المعروف*</th></tr></thead>
+          <tbody>
+            <tr><td>بصمة المنصة</td><td>1.2</td><td>واتساب (0.94)</td><td>عالية</td><td>[من التحقق]</td></tr>
+            <tr><td>الإشارة ELA + الضوضاء</td><td>1.0</td><td>0.71</td><td>متوسطة</td><td>[من التحقق]</td></tr>
+            <tr><td>CAT-Net</td><td>IJCV'22</td><td>0.64 · المنطقة 1</td><td>متوسطة</td><td>[من التحقق]</td></tr>
+            <tr><td>كشف التوليد (CLIP)</td><td>1.1</td><td>0.08</td><td>عالية</td><td>[من التحقق]</td></tr>
+          </tbody></table></div>
+        <p class="crumb" style="margin:6px 0 0;font-size:12px">* تُملأ من نتائج التحقق التشغيلي (البوابة A4).</p></section>
+      <section><h3>4 · نتيجة الدمج</h3><p style="margin:0"><strong>غير حاسم.</strong> مجموعة التنبؤ بتغطية 95% (مُعايَرة لصور الواتساب): أصلية، مؤشرات تلاعب.</p></section>
+      <section><h3>5 · رأي الخبيرة</h3><p class="op">[نص يكتبه الخبير بنفسه — النظام لا يولّده]</p></section>
+      <section><h3>6 · القيود والفحوص الإضافية</h3>
+        <ul style="margin:0;padding-inline-start:20px">
+          <li>الضغط الشديد بعد الواتساب يضعف آثار التلاعب ويخفض موثوقية الكواشف.</li>
+          <li>غياب EXIF وC2PA طبيعي بهذه المنصة ولا يُعد مؤشر تزييف.</li>
+          <li>يُطلب الملف الأصلي من هاتف المُبلِّغ، وصور أخرى من نفس الكاميرا للمقارنة.</li>
+        </ul></section>
+      <section class="sigs">
+        <div><small>الخبيرة</small><strong>نور مهند احمد سعيد</strong><small style="color:#1E5E22">موقّع رقميًا · 10:58 ص</small></div>
+        <div><small>المراجع</small><strong>[اسم المراجع]</strong><small id="revSig">بانتظار المراجعة</small></div>
+      </section>
+      <div class="seal hidden" id="seal"><strong style="color:#3A1E42;font-size:13px;display:block">ختم ATHER · PAdES</strong>
+        بصمة ملف PDF: <span class="mono ltr" style="display:inline-block">c71e…a90b</span> · مُسجَّلة بسجل التدقيق، السطر 48,231</div>
+    </article>
+
+    <footer class="site">ATHER | أثَر — نموذج تخيلي للنظام بعد اكتماله · كل البيانات توضيحية · © 2026 نور مهند احمد سعيد</footer>
+  </main>
+</div>
+<script src="report.js"></script>
+</body>
+</html>

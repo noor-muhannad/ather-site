@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATHER | أثَر — استلام دليل</title>
+<meta name="description" content="ATHER (أثَر) — نموذج تخيلي لمنصة تحليل جنائي للأدلة الرقمية: صور، صوت، فيديو.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="القائمة الرئيسية">
+    <div class="logo"><img src="logo.png" alt="شعار نور"></div>
+    <div class="brand">ATHER <span>| أثَر</span><small>منصة التحليل الجنائي للأدلة الرقمية</small></div>
+    <div class="nav">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>لوحة التحكم</a>
+      <a href="intake.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg>استلام دليل</a>
+      <a href="analysis.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>التحليل</a>
+      <a href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>التقارير</a>
+      <a href="custody.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="7" height="6" rx="3"/><rect x="14" y="9" width="7" height="6" rx="3"/><path d="M10 12h4"/></svg>سلسلة الحيازة</a>
+    </div>
+    <div class="status">
+      <span class="on">يعمل محليًا — بدون إنترنت</span>
+      <div>الخادم: مختبر الأدلة الجنائية</div>
+      <div>الإصدار 1.0 · النماذج موقّعة</div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="top">
+      <div>
+        <h1>استلام دليل رقمي</h1>
+        <p>الأصل يتخزن للقراءة فقط بلحظة الاستلام، وكل التحليل يصير على نسخة عمل.</p>
+      </div>
+      <span class="demo">نموذج تخيلي · بيانات توضيحية</span>
+    </header>
+
+    <ol class="steps" aria-label="مراحل الاستلام">
+      <li class="done" id="st1"><span class="mono">01</span> بيانات القضية والاستلام</li>
+      <li class="now" id="st2"><span class="mono">02</span> رفع الملف وحساب البصمة</li>
+      <li id="st3"><span class="mono">03</span> إيصال الاستلام</li>
+    </ol>
+
+    <div class="row">
+      <form class="card grow" id="intake" aria-label="نموذج الاستلام" style="display:flex;flex-direction:column;gap:18px">
+        <h2 style="margin:0">بيانات القضية</h2>
+        <div class="grid2">
+          <label class="f">القضية
+            <select><option>ATH-2026-0418 — مديرية الأدلة الجنائية — بابل</option><option>ATH-2026-0417 — محكمة تحقيق الحلة</option><option>قضية جديدة…</option></select></label>
+          <label class="f">نوع الدليل
+            <select><option>صورة</option><option>تسجيل صوتي</option><option>فيديو</option></select></label>
+          <label class="f">سلّمه
+            <input type="text" value="الملازم أول [الاسم]"></label>
+          <label class="f">طريقة الاستلام
+            <select><option>نسخ من هاتف المُبلِّغ</option><option>قرص / ذاكرة USB</option><option>تحميل من رابط</option></select></label>
+          <label class="f full">المصدر المُدَّعى
+            <input type="text" value="«صورة من كاميرا هاتفي، أرسلتها بالواتساب»"></label>
+          <label class="f full">السؤال الفني المطلوب الإجابة عنه
+            <textarea rows="2">هل تحتوي الصورة على آثار تلاعب أو توليد اصطناعي، وهل تتسق مع ادعاء التصوير بالهاتف؟</textarea></label>
+        </div>
+        <h2 style="margin:4px 0 0">الملف</h2>
+        <label class="drop">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#7A4F86" stroke-width="1.8" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/></svg>
+          <strong>اسحبي الملف هنا أو اضغطي للاختيار</strong>
+          <span>JPEG · PNG · HEIC · WebP · MP3 · OGG/Opus · MP4 · MOV — النوع يُفحص من محتوى الملف، مو من الامتداد</span>
+          <input type="file" id="file">
+        </label>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <button type="submit" class="btn" style="min-height:48px;font-size:15px">استلام وحساب البصمة</button>
+          <span class="crumb" id="fileNote">الملف ما يطلع من جهازج — البصمة تنحسب بالمتصفح. وإذا ما اخترتي ملف، يطلعلج إيصال تجريبي.</span>
+        </div>
+      </form>
+
+      <aside class="side-col" aria-label="إيصال الاستلام">
+        <div class="card hidden" id="receipt" style="padding:0;overflow:hidden">
+          <div style="background:#3A1E42;color:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center">
+            <strong>إيصال استلام</strong><span class="mono" style="color:#D9B88A;font-size:13px">EV-2026-0418-03</span>
+          </div>
+          <dl class="kv" style="padding:16px 20px">
+            <dt>الوقت</dt><dd id="r-time">6 تشرين الثاني 2026 · 10:42:17 ص</dd>
+            <dt>الملف</dt><dd id="r-file">IMG-20261103-WA0007.jpg · 214 KB</dd>
+            <dt>النوع الحقيقي</dt><dd id="r-type">JPEG (من الـmagic bytes)</dd>
+            <dt>SHA-256</dt><dd class="mono ltr" id="r-sha" style="font-size:12px;word-break:break-all">9f2c41d8a07b3e5c6f19d2a4b8e0c7713a5d6e9f0b2c4d8e1a3f5b7c9d0e2f41</dd>
+            <dt>التخزين</dt><dd>الأصل مقفول (Object Lock) · نسخة عمل منفصلة</dd>
+            <dt>سجل التدقيق</dt><dd>السطر 48,213 أُضيف للسلسلة</dd>
+          </dl>
+          <div style="padding:0 20px 20px;display:flex;flex-wrap:wrap;gap:10px">
+            <a class="btn" href="analysis.html">بدء التحليل</a>
+            <a class="btn ghost" href="custody.html">عرض سلسلة الحيازة</a>
+          </div>
+        </div>
+        <div class="card" id="placeholder" style="border-style:dashed;color:#5E5563;font-size:14px;line-height:1.8">
+          الإيصال يطلع هنا بعد الاستلام: رقم الدليل، والبصمة، ووقت الاستلام، وسطر سجل التدقيق.
+        </div>
+        <div class="note"><strong style="display:block;margin-bottom:4px">تنبيه ثابت بكل إيصال</strong>
+          البصمة تثبت إنو النسخة مطابقة لما استُلم، ولا تثبت إنو المشهد حقيقي.</div>
+      </aside>
+    </div>
+
+    <footer class="site">ATHER | أثَر — نموذج تخيلي للنظام بعد اكتماله · كل البيانات توضيحية · © 2026 نور مهند احمد سعيد</footer>
+  </main>
+</div>
+<script src="intake.js"></script>
+</body>
+</html>

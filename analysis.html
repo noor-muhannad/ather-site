@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATHER | أثَر — نتيجة التحليل</title>
+<meta name="description" content="ATHER (أثَر) — نموذج تخيلي لمنصة تحليل جنائي للأدلة الرقمية: صور، صوت، فيديو.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="القائمة الرئيسية">
+    <div class="logo"><img src="logo.png" alt="شعار نور"></div>
+    <div class="brand">ATHER <span>| أثَر</span><small>منصة التحليل الجنائي للأدلة الرقمية</small></div>
+    <div class="nav">
+      <a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>لوحة التحكم</a>
+      <a href="intake.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg>استلام دليل</a>
+      <a href="analysis.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>التحليل</a>
+      <a href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>التقارير</a>
+      <a href="custody.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="7" height="6" rx="3"/><rect x="14" y="9" width="7" height="6" rx="3"/><path d="M10 12h4"/></svg>سلسلة الحيازة</a>
+    </div>
+    <div class="status">
+      <span class="on">يعمل محليًا — بدون إنترنت</span>
+      <div>الخادم: مختبر الأدلة الجنائية</div>
+      <div>الإصدار 1.0 · النماذج موقّعة</div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="top">
+      <div>
+        <div class="crumb"><a href="index.html">القضايا</a> / <span id="crumbCase">ATH-2026-0418</span></div>
+        <h1>نتيجة التحليل</h1>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        <span class="demo">نموذج تخيلي · بيانات توضيحية</span>
+        <div class="seg white" role="tablist" aria-label="نوع الدليل" id="tabs">
+          <button type="button" role="tab" data-t="image" aria-selected="true">صورة</button>
+          <button type="button" role="tab" data-t="audio" aria-selected="false">صوت</button>
+          <button type="button" role="tab" data-t="video" aria-selected="false">فيديو</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- IMAGE -->
+    <div id="p-image" style="display:flex;flex-direction:column;gap:20px">
+      <section class="card verdict" aria-label="القرار">
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div class="crumb">EV-2026-0418-03 · IMG-20261103-WA0007.jpg</div>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <span class="big">غير حاسم</span>
+            <span class="chip grey" style="font-size:13px">مجموعة التنبؤ بتغطية 95%: أصلية · مؤشرات تلاعب</span>
+          </div>
+          <p style="margin:0;font-size:14px;color:#4A4450;max-width:720px;line-height:1.8">مؤشرات تلاعب محلية بمنطقة واحدة، بس الصورة مضغوطة بشدة بعد مرورها بالواتساب، فالأدلة ما تكفي لقرار واثق. النظام امتنع وطلب فحوصًا إضافية.</p>
+        </div>
+        <div class="probs"><div>أصلية<b>0.41</b></div><div class="hi">تلاعب<b>0.52</b></div><div>توليد<b>0.07</b></div></div>
+      </section>
+
+      <div class="row">
+        <section class="card grow" aria-label="عارض الدليل">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px">
+            <h2 style="margin:0">عارض الدليل</h2>
+            <div class="seg" role="group" aria-label="طبقة العرض" id="layers">
+              <button type="button" data-l="orig" aria-pressed="false">الأصل</button>
+              <button type="button" data-l="ela" aria-pressed="false">ELA</button>
+              <button type="button" data-l="map" aria-pressed="true">خريطة التلاعب</button>
+            </div>
+          </div>
+          <div class="viewer" id="viewer">
+            <svg role="img" aria-label="صورة توضيحية لمشهد شارع" viewBox="0 0 800 500">
+              <rect width="800" height="500" fill="#8FA7B8"/><rect y="300" width="800" height="200" fill="#6E6A66"/>
+              <rect x="40" y="110" width="200" height="200" fill="#C9B59A"/><rect x="70" y="150" width="40" height="50" fill="#5B6B78"/><rect x="150" y="150" width="40" height="50" fill="#5B6B78"/>
+              <rect x="300" y="60" width="240" height="250" fill="#B89F82"/><rect x="330" y="100" width="50" height="60" fill="#5B6B78"/><rect x="420" y="100" width="50" height="60" fill="#5B6B78"/><rect x="330" y="200" width="50" height="60" fill="#5B6B78"/>
+              <rect x="590" y="140" width="180" height="170" fill="#CDBEA8"/>
+              <rect x="470" y="330" width="150" height="70" rx="14" fill="#9C3D3D"/><circle cx="500" cy="405" r="18" fill="#2A2A2A"/><circle cx="590" cy="405" r="18" fill="#2A2A2A"/>
+              <rect y="420" width="800" height="8" fill="#E8E2D8"/>
+            </svg>
+            <div class="ov ela hidden" data-layer="ela"></div><div class="ov ela-dots hidden" data-layer="ela"></div><div class="ov ela-hot hidden" data-layer="ela"></div>
+            <div class="ov box" data-layer="map"></div><div class="ov tag" data-layer="map">منطقة 1 · CAT-Net 0.64 · ELA</div>
+          </div>
+          <div class="facts">
+            <div><small>الأبعاد</small>1600 × 1200</div><div><small>جودة JPEG المقدّرة</small>68</div>
+            <div><small>EXIF</small>محذوفة</div><div><small>C2PA</small>غير موجود (محايد)</div>
+          </div>
+        </section>
+
+        <section class="card side-col" aria-label="الكواشف" style="display:block">
+          <h2>الأدلة من كل كاشف</h2>
+          <div class="det"><div class="h"><strong>بصمة المنصة</strong><span class="rel-hi">موثوقية عالية</span></div><div class="r"><div class="bar"><i style="width:94%"></i></div><span class="mono">0.94</span></div><p>جداول التكميم والأبعاد تطابق صورة مرّت بالواتساب — هذا يفسّر غياب EXIF.</p></div>
+          <div class="det"><div class="h"><strong>اتساق الـMetadata</strong><span class="rel-lo">موثوقية منخفضة</span></div><div class="r"><div class="bar"><i style="width:12%"></i></div><span class="mono">0.12</span></div><p>ماكو بيانات كافية؛ غيابها طبيعي بهالمنصة وما ينحسب مؤشر تزييف.</p></div>
+          <div class="det"><div class="h"><strong>الإشارة (ELA + الضوضاء)</strong><span class="rel-mid">موثوقية متوسطة</span></div><div class="r"><div class="bar"><i style="width:71%"></i></div><span class="mono">0.71</span></div><p>ضغط وضوضاء المنطقة 1 يختلفون عن باقي الصورة.</p></div>
+          <div class="det"><div class="h"><strong>CAT-Net — تحديد التلاعب</strong><span class="rel-mid">موثوقية متوسطة</span></div><div class="r"><div class="bar"><i style="width:64%"></i></div><span class="mono">0.64</span></div><p>خريطة احتمال مركّزة على المنطقة 1؛ الموثوقية نازلة بسبب جودة 68.</p></div>
+          <div class="det"><div class="h"><strong>كشف التوليد (CLIP)</strong><span class="rel-hi">موثوقية عالية</span></div><div class="r"><div class="bar"><i style="width:8%"></i></div><span class="mono">0.08</span></div><p>ماكو مؤشرات إنو الصورة كاملة مولّدة.</p></div>
+          <div class="det"><div class="h"><strong>جودة الدليل</strong><span class="rel-mid">متوسطة</span></div><div class="r"><div class="bar"><i style="width:42%"></i></div><span class="mono">0.42</span></div><p>ضغط شديد + تصغير: يقلل قدرة كل كواشف التلاعب.</p></div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="note" style="flex:1 1 360px" aria-label="فحوص إضافية مقترحة">
+          <strong style="display:block;font-size:17px;margin-bottom:6px">فحوص إضافية مقترحة</strong>
+          <ol style="margin:0;padding-inline-start:20px;line-height:2">
+            <li>طلب الملف الأصلي من هاتف المُبلِّغ قبل الإرسال بالواتساب.</li>
+            <li>صور أخرى من نفس الهاتف لمقارنة بصمة الكاميرا (PRNU).</li>
+            <li>فحص بصري من الخبيرة لحواف السيارة وظلها في المنطقة 1.</li>
+          </ol>
+        </section>
+        <section class="card grow" aria-label="رأي الخبيرة" style="display:flex;flex-direction:column;gap:10px">
+          <label class="f" style="font-size:17px;color:#3A1E42">رأي الخبيرة
+            <textarea rows="3" placeholder="يكتبه الخبير بنفسه — النظام ما يولّد هذا النص…"></textarea></label>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="report.html">إرسال للمراجعة وتوليد التقرير</a>
+            <a class="btn ghost" href="custody.html">سجل هذا الدليل</a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- AUDIO -->
+    <div id="p-audio" class="hidden" style="flex-direction:column;gap:20px">
+      <section class="card" aria-label="القرار">
+        <div class="crumb">EV-2026-0417-01 · رسالة صوتية · 00:42 · Opus</div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:6px 0">
+          <span class="big" style="font-size:26px;font-weight:700;color:#3A1E42">مؤشرات صوت مستنسخ — جزئيًا</span>
+          <span class="chip gold" style="font-size:13px">المقطع 00:14 – 00:19 فقط</span>
+        </div>
+        <p style="margin:0;font-size:14px;color:#4A4450;line-height:1.8;max-width:760px">باقي التسجيل يتسق مع كلام طبيعي باللهجة العراقية. خمس ثواني بالوسط بيها مؤشرات توليد عالية ونقطتا انقطاع بالخلفية الصوتية.</p>
+      </section>
+      <section class="card" aria-label="الموجة الصوتية" style="display:flex;flex-direction:column;gap:12px">
+        <h2 style="margin:0">الموجة واحتمال التوليد عبر الزمن</h2>
+        <div class="wave" id="wave" aria-hidden="true"></div>
+        <div class="mono ltr" style="display:flex;justify-content:space-between;font-size:12px;color:#5E5563"><span>00:00</span><span>00:14</span><span>00:19</span><span>00:42</span></div>
+        <div class="legend"><span><i style="background:#7A4F86"></i>كلام طبيعي</span><span><i style="background:#D9822B"></i>احتمال توليد عالٍ</span></div>
+      </section>
+      <section class="grid4" aria-label="الكواشف">
+        <div class="mini"><strong>بنية الملف والترميز</strong><b>Opus 16 kHz</b><small>يطابق رسالة صوتية من الواتساب؛ ماكو آثار تحرير بالحاوية.</small></div>
+        <div class="mini"><strong>كشف الاستنساخ (XLS-R + AASIST)</strong><b>0.88</b><small>أعلى قيمة بالمقطع 00:14–00:19؛ باقي التسجيل تحت 0.15.</small></div>
+        <div class="mini"><strong>القص واللصق</strong><b>نقطتان</b><small>انقطاع مفاجئ بضوضاء الخلفية عند 00:14 و 00:19.</small></div>
+        <div class="mini"><strong>تردد الشبكة (ENF)</strong><b>غير متاح</b><small>ضغط Opus أزال إشارة 50 Hz — ما ينحسب ضد أو مع.</small></div>
+      </section>
+    </div>
+
+    <!-- VIDEO -->
+    <div id="p-video" class="hidden" style="flex-direction:column;gap:20px">
+      <section class="card" aria-label="القرار">
+        <div class="crumb">EV-2026-0415-01 · فيديو · 00:48 · H.264 · 720p</div>
+        <div style="font-size:26px;font-weight:700;color:#3A1E42;margin:6px 0">مؤشرات تلاعب — عدم تطابق الصوت والشفاه</div>
+        <p style="margin:0;font-size:14px;color:#4A4450;line-height:1.8;max-width:760px">الفيديو نفسه انعاد ترميزه مرة وحدة (طبيعي بعد الواتساب)، بس من الثانية 00:21 حركة الشفاه ما تطابق الكلام، والمسار الصوتي بنفس الفترة بيه مؤشرات استنساخ.</p>
+      </section>
+      <section class="card" aria-label="الإطارات المفتاحية" style="display:flex;flex-direction:column;gap:12px">
+        <h2 style="margin:0">الإطارات المفتاحية وتطابق الشفاه</h2>
+        <div class="frames" id="frames"></div>
+      </section>
+      <section class="grid4" aria-label="الكواشف">
+        <div class="mini"><strong>بنية الحاوية</strong><b>MP4 · ترميز واحد</b><small>يتسق مع مرور واحد عبر الواتساب.</small></div>
+        <div class="mini"><strong>كواشف الصور على الإطارات</strong><b>0.18</b><small>ماكو مؤشرات تلاعب قوية بالإطارات نفسها.</small></div>
+        <div class="mini"><strong>تطابق الشفاه والصوت</strong><b>0.21</b><small>ينزل بشدة من 00:21 إلى 00:33.</small></div>
+        <div class="mini"><strong>المسار الصوتي</strong><b>0.79</b><small>مؤشرات استنساخ بنفس الفترة — الأدلة تتفق.</small></div>
+      </section>
+    </div>
+
+    <footer class="site">ATHER | أثَر — نموذج تخيلي للنظام بعد اكتماله · كل البيانات توضيحية · © 2026 نور مهند احمد سعيد</footer>
+  </main>
+</div>
+<script src="analysis.js"></script>
+</body>
+</html>

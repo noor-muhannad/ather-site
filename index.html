@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATHER | أثَر — لوحة التحكم</title>
+<meta name="description" content="ATHER (أثَر) — نموذج تخيلي لمنصة تحليل جنائي للأدلة الرقمية: صور، صوت، فيديو.">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <nav class="side" aria-label="القائمة الرئيسية">
+    <div class="logo"><img src="logo.png" alt="شعار نور"></div>
+    <div class="brand">ATHER <span>| أثَر</span><small>منصة التحليل الجنائي للأدلة الرقمية</small></div>
+    <div class="nav">
+      <a href="index.html" class="active" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>لوحة التحكم</a>
+      <a href="intake.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 20h16"/></svg>استلام دليل</a>
+      <a href="analysis.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>التحليل</a>
+      <a href="report.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg>التقارير</a>
+      <a href="custody.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="7" height="6" rx="3"/><rect x="14" y="9" width="7" height="6" rx="3"/><path d="M10 12h4"/></svg>سلسلة الحيازة</a>
+    </div>
+    <div class="status">
+      <span class="on">يعمل محليًا — بدون إنترنت</span>
+      <div>الخادم: مختبر الأدلة الجنائية</div>
+      <div>الإصدار 1.0 · النماذج موقّعة</div>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="top">
+      <div>
+        <h1>صباح الخير، نور</h1>
+        <p>الجمعة 6 تشرين الثاني 2026 · آخر دخول 9:14 ص</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+        <span class="demo">نموذج تخيلي · بيانات توضيحية</span>
+        <label class="f" style="flex-direction:row;align-items:center;gap:8px;background:#fff;border:1px solid #E3DCE6;border-radius:10px;padding:0 12px;min-height:44px">
+          <span class="sr">بحث</span>
+          <input type="search" placeholder="ابحثي برقم القضية أو البصمة…" style="border:0;min-height:40px;padding:0;width:240px">
+        </label>
+        <a class="btn" href="intake.html">+ استلام دليل جديد</a>
+      </div>
+    </header>
+
+    <section class="grid4" aria-label="المؤشرات">
+      <div class="card kpi"><div class="lbl">قضايا مفتوحة</div><div class="val">12</div><div class="sub">4 منها بأولوية عالية</div></div>
+      <div class="card kpi"><div class="lbl">أدلة قيد التحليل</div><div class="val">5</div><div class="sub">3 صور · 1 صوت · 1 فيديو</div></div>
+      <div class="card kpi"><div class="lbl">بانتظار المراجعة</div><div class="val" style="color:#8A6232">3</div><div class="sub">أقدمها منذ يومين</div></div>
+      <div class="card kpi dark"><div class="lbl">سلامة سجل التدقيق</div>
+        <div class="val"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7BD389" stroke-width="2.4" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>السلسلة سليمة</div>
+        <div class="sub">48,212 سطرًا · آخر فحص 10:00 ص</div></div>
+    </section>
+
+    <div class="row">
+      <section class="card grow" aria-label="القضايا الحديثة">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px">
+          <h2 style="margin:0">القضايا الحديثة</h2>
+          <div class="seg" role="group" aria-label="تصفية حسب نوع الدليل" id="filters">
+            <button type="button" data-f="all" aria-pressed="true">الكل</button>
+            <button type="button" data-f="image" aria-pressed="false">صور</button>
+            <button type="button" data-f="audio" aria-pressed="false">صوت</button>
+            <button type="button" data-f="video" aria-pressed="false">فيديو</button>
+          </div>
+        </div>
+        <div class="scroll">
+          <table style="min-width:640px">
+            <thead><tr><th>رقم القضية</th><th>الجهة الطالبة</th><th>الأدلة</th><th>المصدر</th><th>الحالة</th><th>آخر تحديث</th></tr></thead>
+            <tbody id="cases">
+              <tr data-k="image"><td><a class="mono" href="analysis.html">ATH-2026-0418</a></td><td>مديرية الأدلة الجنائية — بابل</td><td>3 صور</td><td>واتساب</td><td><span class="chip gold">بانتظار المراجعة</span></td><td>اليوم 10:42 ص</td></tr>
+              <tr data-k="audio"><td><a class="mono" href="analysis.html#audio">ATH-2026-0417</a></td><td>محكمة تحقيق الحلة</td><td>تسجيل صوتي</td><td>تلغرام</td><td><span class="chip purple">قيد التحليل</span></td><td>اليوم 9:58 ص</td></tr>
+              <tr data-k="video"><td><a class="mono" href="analysis.html#video">ATH-2026-0415</a></td><td>مديرية الأدلة الجنائية — بابل</td><td>فيديو 00:48</td><td>واتساب</td><td><span class="chip purple">قيد التحليل</span></td><td>أمس 4:20 م</td></tr>
+              <tr data-k="image"><td><a class="mono" href="report.html">ATH-2026-0412</a></td><td>مركز شرطة الحلة</td><td>1 صورة</td><td>من الهاتف مباشرة</td><td><span class="chip green">مختومة</span></td><td>أمس 1:05 م</td></tr>
+              <tr data-k="image"><td><a class="mono" href="analysis.html">ATH-2026-0409</a></td><td>محكمة تحقيق الحلة</td><td>2 صور</td><td>فيسبوك</td><td><span class="chip grey">غير حاسم — فحص إضافي</span></td><td>3 تشرين الثاني</td></tr>
+              <tr data-k="audio"><td><a class="mono" href="report.html">ATH-2026-0405</a></td><td>مديرية الأدلة الجنائية — بابل</td><td>تسجيل صوتي</td><td>واتساب</td><td><span class="chip green">مختومة</span></td><td>2 تشرين الثاني</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="side-col">
+        <section class="card" aria-label="التحليلات الجارية">
+          <h2>التحليلات الجارية</h2>
+          <div style="display:flex;flex-direction:column;gap:14px;font-size:13px">
+            <div><div style="display:flex;justify-content:space-between"><span>ATH-0417 · تسجيل صوتي</span><span class="crumb">72%</span></div><div class="bar"><i style="width:72%"></i></div><div class="crumb" style="font-size:12px">كشف الاستنساخ (XLS-R + AASIST)</div></div>
+            <div><div style="display:flex;justify-content:space-between"><span>ATH-0415 · فيديو</span><span class="crumb">41%</span></div><div class="bar"><i style="width:41%"></i></div><div class="crumb" style="font-size:12px">تحليل الإطارات المفتاحية · 96 / 234</div></div>
+            <div><div style="display:flex;justify-content:space-between"><span>ATH-0418 · صورة 3</span><span class="crumb">100%</span></div><div class="bar"><i style="width:100%;background:#2E7D32"></i></div><div class="crumb" style="font-size:12px">اكتمل · بانتظار رأي الخبيرة</div></div>
+          </div>
+        </section>
+        <section class="card" aria-label="نتائج هذا الشهر">
+          <h2>نتائج هذا الشهر</h2>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:13px">
+            <div style="display:flex;align-items:center;gap:10px"><span style="width:120px">لا مؤشرات تلاعب</span><div class="bar" style="flex:1;height:10px"><i style="width:54%"></i></div><span style="width:28px">27</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="width:120px">مؤشرات تلاعب</span><div class="bar" style="flex:1;height:10px"><i style="width:18%;background:#7A4F86"></i></div><span style="width:28px">9</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="width:120px">توليد اصطناعي</span><div class="bar" style="flex:1;height:10px"><i style="width:12%;background:#B8894F"></i></div><span style="width:28px">6</span></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="width:120px">غير حاسم</span><div class="bar" style="flex:1;height:10px"><i style="width:16%;background:#C9BFCC"></i></div><span style="width:28px">8</span></div>
+          </div>
+          <p class="crumb" style="margin:12px 0 0;font-size:12px">«غير حاسم» يعني إنو النظام امتنع وطلب فحوصًا إضافية بدل حكم واثق وغلط.</p>
+        </section>
+      </div>
+    </div>
+
+    <footer class="site">ATHER | أثَر — نموذج تخيلي للنظام بعد اكتماله · كل البيانات توضيحية · © 2026 نور مهند احمد سعيد</footer>
+  </main>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
